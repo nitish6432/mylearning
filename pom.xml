@@ -13,7 +13,7 @@
 	<artifactId>spring-boot-sopa-ws-client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-boot-sopa-ws-client</name>
-	<description>Integration test using spring boot</description>
+	<description>Integration test using spring </description>
 
 	<properties>
 		<java.version>1.8</java.version>
