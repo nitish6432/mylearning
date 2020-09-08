@@ -18,9 +18,9 @@ public class SoapClinet {
 
 	public Acknowledgement getLoanStatus(CustomerRequest request) {
 		template = new WebServiceTemplate(marshaller);
-		Acknowledgement acknowledgement = (Acknowledgement) template.marshalSendAndReceive("http://localhost:8181/ws",
+		return (Acknowledgement) template.marshalSendAndReceive("http://localhost:8181/ws",
 				request);
-		return acknowledgement;
+		
 	}
 
 }
