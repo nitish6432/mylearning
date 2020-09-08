@@ -14,10 +14,10 @@ public class SoapClinet {
 	@Autowired
 	private Jaxb2Marshaller marshaller;
 
-	private WebServiceTemplate template1;
+	private WebServiceTemplate template;
 
 	public Acknowledgement getLoanStatus(CustomerRequest request) {
-		template1 = new WebServiceTemplate(marshaller);
+		template = new WebServiceTemplate(marshaller);
 		Acknowledgement acknowledgement = (Acknowledgement) template.marshalSendAndReceive("http://localhost:8181/ws",
 				request);
 		return acknowledgement;
